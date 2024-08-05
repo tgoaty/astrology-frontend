@@ -1,0 +1,15 @@
+.form__place {
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: 380px;
+    height: 450px;
+    background-color: #181818;
+    border: white solid 4px;
+}
+
+.form__title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "Comic Sans MS", sans-serif;
+}
