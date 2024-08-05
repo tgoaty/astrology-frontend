@@ -1,4 +1,4 @@
-const BASE_URL: string = 'https://astrologybackend-6g2908xuc-tgoatys-projects.vercel.app/api';
+const BASE_URL: string = 'astrologybackend-tgoatys-projects.vercel.app/api';
 
 interface EndpointsInterface {
     [key: string]: string;
