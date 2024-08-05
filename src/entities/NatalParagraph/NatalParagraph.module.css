@@ -1,0 +1,22 @@
+.natal__paragraph__box {
+    background-color: #202020;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.natal__paragraph__title {
+    margin-left: 18px;
+    margin-bottom: 4px;
+    color: white;
+}
+.natal__paragraph__text {
+    text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+    .natal__paragraph__title {
+        font-size: 16px;
+    }
+    .natal__paragraph__text {
+        font-size: 14px;
+    }
+}

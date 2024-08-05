@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./NatalParagraph.module.css"
 
 interface NatalParagraphProps {
     array: [string, string];
@@ -6,9 +7,9 @@ interface NatalParagraphProps {
 
 const NatalParagraph: React.FC<NatalParagraphProps> = ({ array }) => {
     return (
-        <div>
-            <h3>{array[0]}</h3>
-            <p>{array[1]}</p>
+        <div className={styles["natal__paragraph__box"]}>
+            <h3 className={styles["natal__paragraph__title"]}>{array[0]}</h3>
+            <p className={styles["natal__paragraph__text"]}>{array[1]}</p>
         </div>
     );
 };

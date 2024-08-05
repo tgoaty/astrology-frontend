@@ -8,7 +8,7 @@ const App = () => {
                 algorithm: theme.darkAlgorithm,
                 components: {
                     Form: {
-                        itemMarginBottom: 36,
+                        // itemMarginBottom: 36,
                         labelFontSize: 16,
                         labelRequiredMarkColor: '#929292'
                     },

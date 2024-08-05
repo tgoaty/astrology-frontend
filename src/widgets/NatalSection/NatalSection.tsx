@@ -1,5 +1,6 @@
 import React from 'react';
 import NatalParagraph from "../../entities/NatalParagraph/NatalParagraph.tsx";
+import styles from "./NatalSection.module.css"
 
 interface NatalSectionProps {
     header: string,
@@ -8,8 +9,8 @@ interface NatalSectionProps {
 
 const NatalSection: React.FC<NatalSectionProps> = ({header, arrays}) => {
     return (
-        <div>
-            <h2>{header}</h2>
+        <div className={styles["natal__section__box"]}>
+            <h2 className={styles["natal__section__title"]}>{header}</h2>
             {arrays.map((array, index) => <div key={index}><NatalParagraph array={array}/></div>)}
         </div>
     );

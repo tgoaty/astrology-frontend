@@ -1,3 +1,4 @@
+
 import {useUserInfoStore} from "../../app/store/store.ts";
 import {useEffect, useState} from "react";
 import axios from "axios"
@@ -20,8 +21,8 @@ const Index = () => {
     }
     console.log(Data)
     useEffect(() => {
-        axios.post<NatalChart>(endpoints.getNatal, Data)
-            .then(response => setNatal(response.data as NatalChart))
+        axios.post(endpoints.getNatal, Data)
+            .then(response => setNatal(JSON.parse(response.data) as NatalChart))
             .catch(error => console.error(error))
     }, [])
     if (!natal) {
@@ -29,7 +30,7 @@ const Index = () => {
     }
 
     return (
-        <div style={{color: "wheat", fontSize: "1rem", margin: 40, paddingTop: 4200}}>
+        <div >
             <NatalSection header={"Планеты и точки в Знаках"} arrays={natal["Планеты и точки в Знаках"]}/>
             <NatalSection header={"Планеты и Точки в Домах"} arrays={natal["Планеты и Точки в Домах"]}/>
             <NatalSection header={"Аспекты"} arrays={natal["Аспекты"]}/>
