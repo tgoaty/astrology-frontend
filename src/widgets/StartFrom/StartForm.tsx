@@ -13,7 +13,7 @@ const StartForm = () => {
     const navigate = useNavigate();
     const {setUsername, setCity, setDate, setTime} = useUserInfoStore();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         form.validateFields().then((value: startFormInterface) => {
             setUsername(value.name);

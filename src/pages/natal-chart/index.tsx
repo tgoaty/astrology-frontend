@@ -21,19 +21,18 @@ const Index = () => {
     console.log(Data)
     useEffect(() => {
         axios.post<NatalChart>(endpoints.getNatal, Data)
-            .then(response => setNatal(JSON.parse(response.data)))
+            .then(response => setNatal(response.data as NatalChart))
             .catch(error => console.error(error))
     }, [])
     if (!natal) {
         return <Loader/>
     }
-    console.log(natal)
-    const keys = Object.keys(natal)
+
     return (
         <div style={{color: "wheat", fontSize: "1rem", margin: 40, paddingTop: 4200}}>
-            <NatalSection header={keys[0]} arrays={natal[keys[0]]}/>
-            <NatalSection header={keys[1]} arrays={natal[keys[1]]}/>
-            <NatalSection header={keys[2]} arrays={natal[keys[2]]}/>
+            <NatalSection header={"Планеты и точки в Знаках"} arrays={natal["Планеты и точки в Знаках"]}/>
+            <NatalSection header={"Планеты и Точки в Домах"} arrays={natal["Планеты и Точки в Домах"]}/>
+            <NatalSection header={"Аспекты"} arrays={natal["Аспекты"]}/>
         </div>
     );
 };

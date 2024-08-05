@@ -1,7 +1,7 @@
 const Loader = () => {
     return (
         <div>
-            LOADING >>>
+            {"LOADING >>>"}
         </div>
     );
 };

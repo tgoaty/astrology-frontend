@@ -1,8 +1,8 @@
-import dayjs from "dayjs";
+import {Dayjs} from "dayjs";
 
 export interface startFormInterface {
     name: string,
     city: string,
-    date: dayjs,
-    time: dayjs
+    date: Dayjs
+    time: Dayjs
 }
