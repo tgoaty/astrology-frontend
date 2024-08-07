@@ -22,6 +22,7 @@ const StartForm = () => {
             const dateString = dayjs(value.date).format('DD.MM.YYYY')
             setDate(dateString);
             setTime(time);
+            sessionStorage.removeItem("natal")
             return navigate('/natal', {replace: true});
         })
     }
