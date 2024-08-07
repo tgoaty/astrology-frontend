@@ -11,6 +11,7 @@
 }
 .natal__paragraph__text {
     text-align: justify;
+    text-indent: 2em;
 }
 .natal__paragraph__title__block {
     fill: #FFF;
