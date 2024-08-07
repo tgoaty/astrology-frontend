@@ -1,6 +1,7 @@
 import Routing from "../pages";
 import {ConfigProvider, theme} from "antd";
 
+
 const App = () => {
     return (
         <ConfigProvider
@@ -8,14 +9,14 @@ const App = () => {
                 algorithm: theme.darkAlgorithm,
                 components: {
                     Form: {
-                        // itemMarginBottom: 36,
                         labelFontSize: 16,
                         labelRequiredMarkColor: '#929292'
                     },
                 },
                 token: {
                     colorPrimary: "white",
-                    borderRadius: 10
+                    borderRadius: 10,
+                    fontFamily: "Comic Sans MS"
                 },
             }}>
             <Routing/>

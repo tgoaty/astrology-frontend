@@ -5,12 +5,22 @@
     margin-bottom: 10px;
 }
 .natal__paragraph__title {
-    margin-left: 18px;
+    margin-left: 12px;
     margin-bottom: 4px;
     color: white;
 }
 .natal__paragraph__text {
     text-align: justify;
+}
+.natal__paragraph__title__block {
+    fill: #FFF;
+    display: flex;
+    align-items: center;
+}
+.natal__paragraph__icon {
+    width: 40px;
+    filter: brightness(0) invert(1);
+    stroke-width: 5px
 }
 @media only screen and (max-width: 768px) {
     .natal__paragraph__title {
