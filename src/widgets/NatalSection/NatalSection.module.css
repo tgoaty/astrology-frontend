@@ -1,14 +1,13 @@
 .natal__section__box {
     margin: 40px;
-    border: white solid 4px;
+    border: var(--border-color) solid 4px;
     border-radius: 18px;
     padding: 20px;
-    color: #f1e3e3;
 }
 .natal__section__title {
     text-align: center;
     margin-bottom: 10px;
-    color: white;
+    color: var(--text-color-title);
     font-size: 30px;
 }
 @media only screen and (max-width: 768px) {

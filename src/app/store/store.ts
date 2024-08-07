@@ -1,10 +1,12 @@
 import {create} from "zustand"
+import {themeMode} from "../../shared/types/types.ts";
 
 interface useUserInfoStoreState {
     username: string;
     city: string;
     date: string;
-    time: string
+    time: string;
+    themeColor: themeMode
 }
 
 interface useUserInfoStoreActions {
@@ -12,6 +14,7 @@ interface useUserInfoStoreActions {
     setCity: (newCity: string) => void;
     setDate: (newDate: string) => void;
     setTime: (newTime: string) => void;
+    setThemeColor: (newThemeColor: themeMode) => void
 }
 
 export const useUserInfoStore = create<useUserInfoStoreState & useUserInfoStoreActions>((set) => ({
@@ -19,8 +22,10 @@ export const useUserInfoStore = create<useUserInfoStoreState & useUserInfoStoreA
     city: '',
     date: '',
     time: '',
+    themeColor: localStorage.getItem('theme') as themeMode || themeMode.light,
     setUsername: (newUsername) => set({username: newUsername}),
     setCity: (newCity) => set({city: newCity}),
     setDate: (newDate) => set({date: newDate}),
-    setTime: (newTime) => set({time: newTime})
+    setTime: (newTime) => set({time: newTime}),
+    setThemeColor: (newThemeColor) => set({themeColor: newThemeColor})
 }))

@@ -4,12 +4,12 @@
     padding: 20px 40px;
     width: 380px;
     height: 450px;
-    background-color: #181818;
-    border: white solid 4px;
+    background-color: var(--background-color-second);
+    border: var(--border-color) solid 4px;
 }
 
 .form__title {
-    color: white;
+    color: var(--text-color-title);
     font-size: 20px;
     margin-bottom: 20px;
     font-family: "Comic Sans MS", sans-serif;
@@ -31,7 +31,6 @@
         height: 500px;
     }
     .form__title {
-        color: white;
         font-size: 16px;
         margin-bottom: 10px;
     }

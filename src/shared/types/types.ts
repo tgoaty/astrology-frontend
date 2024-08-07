@@ -6,3 +6,7 @@ export interface startFormInterface {
     date: Dayjs
     time: Dayjs
 }
+export enum themeMode {
+    dark = "dark",
+    light = "light"
+}

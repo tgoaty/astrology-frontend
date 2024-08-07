@@ -1,14 +1,14 @@
 import {Button, DatePicker, Form, Input, Row, TimePicker} from "antd";
 import dayjs from 'dayjs';
 import React from "react";
-import styles from "./StartForm.module.css"
+import styles from "./CreateNatalForm.module.css"
 import {useNavigate} from "react-router-dom";
 import {useUserInfoStore} from "../../app/store/store.ts";
 import {startFormInterface} from "../../shared/types/types.ts";
 
 const format = 'HH:mm';
 
-const StartForm = () => {
+const CreateNatalForm = () => {
     const [form] = Form.useForm();
     const navigate = useNavigate();
     const {setUsername, setCity, setDate, setTime} = useUserInfoStore();
@@ -57,4 +57,4 @@ const StartForm = () => {
     );
 };
 
-export default StartForm;
+export default CreateNatalForm;

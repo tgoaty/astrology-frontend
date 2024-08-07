@@ -1,15 +1,14 @@
 import {lazy, Suspense} from "react";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Loader from "../shared/ui/Loader.tsx";
-
-const StartForm = lazy(() => import("./start-form"))
+const CreateNatalForm = lazy(() => import("./create-natal-form"))
 const NatalChart = lazy(() => import("./natal-chart"))
 const NotFoundPage = lazy(() => import("./not-found"))
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <StartForm/>
+        element: <CreateNatalForm/>
     },
     {
         path: '/natal',

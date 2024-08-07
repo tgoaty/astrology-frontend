@@ -12,7 +12,7 @@ const Index = () => {
 
     useEffect(() => {
         if (sessionStorage.getItem("natal")) {
-            const sessionNatal = JSON.parse<NatalChart>(sessionStorage.getItem("natal") as string);
+            const sessionNatal = JSON.parse(sessionStorage.getItem("natal") as string);
             setNatal(sessionNatal);
         } else {
             fetchNatal();
@@ -33,7 +33,7 @@ const Index = () => {
 
         axios.post(endpoints.getNatal, data)
             .then(response => {
-                const natalData = JSON.parse<NatalChart>(response.data);
+                const natalData = JSON.parse(response.data);
                 setNatal(natalData);
                 sessionStorage.setItem("natal", JSON.stringify(natalData));
             })

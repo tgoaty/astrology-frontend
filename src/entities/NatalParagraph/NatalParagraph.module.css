@@ -1,5 +1,5 @@
 .natal__paragraph__box {
-    background-color: #202020;
+    background-color: var(--background-color-second);
     padding: 18px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -7,20 +7,21 @@
 .natal__paragraph__title {
     margin-left: 12px;
     margin-bottom: 4px;
-    color: white;
+    color: var(--text-color-title);
 }
 .natal__paragraph__text {
     text-align: justify;
     text-indent: 2em;
+    color: var(--text-color-block);
 }
 .natal__paragraph__title__block {
-    fill: #FFF;
+    fill: var(--background-color-second);
     display: flex;
     align-items: center;
 }
 .natal__paragraph__icon {
     width: 40px;
-    filter: brightness(0) invert(1);
+    filter: var(--icon-filter);
     stroke-width: 5px
 }
 @media only screen and (max-width: 768px) {
