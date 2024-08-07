@@ -2,23 +2,26 @@
     font-family: "Comic Sans MS";
     font-style: normal;
     font-weight: 400;
-    src: url("comic.ttf") format("ttf");
+    src: url("/src/assets/fonts/comic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Comic Sans MS";
     font-style: normal;
     font-weight: 700;
-    src: url("comicbd.ttf") format("ttf");
+    src: url("/src/assets/fonts/comicbd.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Comic Sans MS";
     font-style: italic;
     font-weight: 400;
-    src: url("comici.ttf") format("ttf");
+    src: url("/src/assets/fonts/comici.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Comic Sans MS";
     font-style: italic;
     font-weight: 700;
-    src: url("comicz.ttf") format("ttf");
+    src: url("/src/assets/fonts/comicz.ttf") format("truetype");
 }
