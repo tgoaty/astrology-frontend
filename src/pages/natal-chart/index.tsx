@@ -5,10 +5,12 @@ import {NatalChart} from "../../shared/types/natalTypes.ts";
 import endpoints from "../../shared/api/endpoints.ts";
 import Loader from "../../shared/ui/Loader.tsx";
 import NatalSection from "../../widgets/NatalSection/NatalSection.tsx";
+import NatalPageError from "../../shared/ui/Errors/NatalPageError/NatalPageError.tsx";
 
 const Index = () => {
     const {city, date, time} = useUserInfoStore();
     const [natal, setNatal] = useState<NatalChart | null>(null);
+    const [error, setError] = useState('')
 
     useEffect(() => {
         if (sessionStorage.getItem("natal")) {
@@ -37,12 +39,16 @@ const Index = () => {
                 setNatal(natalData);
                 sessionStorage.setItem("natal", JSON.stringify(natalData));
             })
-            .catch(error => console.error(error));
+            .catch(error => setError(error.message || 'Произошла ошибка'));
     };
+    if (error) {
+        return <NatalPageError/>
 
+    }
     if (!natal) {
         return <Loader/>;
     }
+
     return (
         <>
             <NatalSection header={"Планеты и точки в Знаках"} arrays={natal["Планеты и точки в Знаках"]}/>
