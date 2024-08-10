@@ -42,7 +42,6 @@ const App = () => {
                 }
 
             }>
-            {/*<ChangeThemeBtn/>*/}
             <Routing/>
         </ConfigProvider>
     );

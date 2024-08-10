@@ -1,6 +1,7 @@
 import {Button} from "antd";
 import {useUserInfoStore} from "../../app/store/store.ts";
 import {themeMode} from "../../shared/types/types.ts";
+import {MoonOutlined, SunOutlined} from "@ant-design/icons"
 
 const ChangeThemeBtn = () => {
     const {themeColor, setThemeColor} = useUserInfoStore()
@@ -12,7 +13,7 @@ const ChangeThemeBtn = () => {
     }
     return (
         <Button onClick={toggleCurrentTheme}>
-            поменять тему
+            {themeColor === themeMode.light ? <MoonOutlined style={{fontSize: 20}} /> : <SunOutlined style={{fontSize: 20}}/>}
         </Button>
     );
 };

@@ -1,0 +1,29 @@
+.header {
+    align-items: center;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    border-bottom: var(--border-color) 3px solid;
+}
+
+.user__info {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.username {
+    font-size: 18px;
+}
+.avatar {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 0 30px;
+    }
+
+;
+}

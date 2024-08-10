@@ -8,6 +8,7 @@ interface NatalSectionProps {
 }
 
 const NatalSection: React.FC<NatalSectionProps> = ({header, arrays}) => {
+    console.log(header, arrays)
     return (
         <div className={styles["natal__section__box"]}>
             <h2 className={styles["natal__section__title"]}>{header}</h2>
