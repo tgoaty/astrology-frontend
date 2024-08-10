@@ -12,7 +12,7 @@ interface goToPageBtnProps {
 const GoToPageBtn: React.FC<goToPageBtnProps> = ({text, route, disabled}) => {
     const navigate = useNavigate();
     const goToPage = () => {
-        return navigate(route, {replace: true});
+        return navigate(route);
     }
     return (
         <Button className={styles["button"]} onClick={goToPage} disabled={disabled}>

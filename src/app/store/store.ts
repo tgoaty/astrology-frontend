@@ -22,7 +22,7 @@ export const useUserInfoStore = create<useUserInfoStoreState & useUserInfoStoreA
     city: '',
     date: '',
     time: '',
-    themeColor: localStorage.getItem('theme') as themeMode || themeMode.light,
+    themeColor: localStorage.getItem('theme') as themeMode || themeMode.dark,
     setUsername: (newUsername) => set({username: newUsername}),
     setCity: (newCity) => set({city: newCity}),
     setDate: (newDate) => set({date: newDate}),

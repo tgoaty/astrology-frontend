@@ -23,7 +23,7 @@ const CreateNatalForm = () => {
             setDate(dateString);
             setTime(time);
             sessionStorage.removeItem("natal")
-            return navigate('/natal', {replace: true});
+            return navigate('/natal');
         })
     }
 
