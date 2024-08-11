@@ -4,30 +4,36 @@
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 .natal__paragraph__title {
     margin-left: 12px;
     margin-bottom: 4px;
     color: var(--text-color-title);
 }
+
 .natal__paragraph__text {
     text-align: justify;
     text-indent: 2em;
     color: var(--text-color-block);
 }
+
 .natal__paragraph__title__block {
     fill: var(--background-color-second);
     display: flex;
     align-items: center;
 }
+
 .natal__paragraph__icon {
     width: 40px;
     filter: var(--icon-filter);
     stroke-width: 5px
 }
+
 @media only screen and (max-width: 768px) {
     .natal__paragraph__title {
         font-size: 16px;
     }
+
     .natal__paragraph__text {
         font-size: 14px;
     }

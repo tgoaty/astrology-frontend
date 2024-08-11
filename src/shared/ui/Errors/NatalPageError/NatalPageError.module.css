@@ -6,15 +6,19 @@
     align-items: center;
     column-gap: 20px;
 }
+
 .title {
     margin-bottom: 16px;
 }
+
 .text {
     margin-bottom: 16px;
 }
+
 .code {
-font-size: 60px;
+    font-size: 60px;
 }
+
 .button {
     color: #cf1322;
 }

@@ -26,7 +26,7 @@ const App = () => {
                         borderRadius: 10,
                         fontFamily: "Comic Sans MS"
                     },
-                }:{
+                } : {
                     algorithm: theme.darkAlgorithm,
                     components: {
                         Form: {

@@ -8,7 +8,7 @@ import NatalSection from "../../widgets/NatalSection/NatalSection.tsx";
 import NatalPageError from "../../shared/ui/Errors/NatalPageError/NatalPageError.tsx";
 
 const Index = () => {
-    const {city, date, time} = useUserInfoStore();
+    const {natalInfo} = useUserInfoStore();
     const [natal, setNatal] = useState<NatalChart | null>(null);
     const [error, setError] = useState('')
 
@@ -22,8 +22,9 @@ const Index = () => {
     }, []);
 
     const fetchNatal = () => {
-        const [day, month, year] = date.split('.');
-        const [hour, minute] = time.split(':');
+        const city = natalInfo.city
+        const [day, month, year] = natalInfo.date.split('.');
+        const [hour, minute] = natalInfo.time.split(':');
         const data = {
             day,
             month,

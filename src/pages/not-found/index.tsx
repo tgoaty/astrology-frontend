@@ -1,4 +1,4 @@
-import { Result, Button } from 'antd';
+import {Result, Button} from 'antd';
 import {useNavigate} from "react-router-dom";
 
 const NotFoundPage = () => {

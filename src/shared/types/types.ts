@@ -1,11 +1,18 @@
 import {Dayjs} from "dayjs";
 
-export interface startFormInterface {
+export interface natalFormInterface {
     name: string,
     city: string,
-    date: Dayjs
+    date: Dayjs | string
     time: Dayjs
 }
+
+export interface natalInfo {
+    city: string,
+    date: string,
+    time: string
+}
+
 export enum themeMode {
     dark = "dark",
     light = "light"

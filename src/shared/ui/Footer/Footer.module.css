@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     border-top: var(--border-color) solid 3px;
-
     background-color: var(--background-color);
     padding: 20px 40px;
 }

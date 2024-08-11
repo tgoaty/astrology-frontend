@@ -13,7 +13,8 @@ const ChangeThemeBtn = () => {
     }
     return (
         <Button onClick={toggleCurrentTheme}>
-            {themeColor === themeMode.light ? <MoonOutlined style={{fontSize: 20}} /> : <SunOutlined style={{fontSize: 20}}/>}
+            {themeColor === themeMode.light ? <MoonOutlined style={{fontSize: 20}}/> :
+                <SunOutlined style={{fontSize: 20}}/>}
         </Button>
     );
 };

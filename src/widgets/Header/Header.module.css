@@ -16,6 +16,7 @@
 .username {
     font-size: 18px;
 }
+
 .avatar {
     cursor: pointer;
 }
@@ -24,6 +25,4 @@
     .header {
         padding: 0 30px;
     }
-
-;
 }

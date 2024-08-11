@@ -1,6 +1,7 @@
 import {lazy, Suspense} from "react";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Loader from "../shared/ui/Loader.tsx";
+import Profile from "./profile";
 
 const MainMenu = lazy(() => import("./main-menu"))
 const CreateNatalForm = lazy(() => import("./create-natal-form"))
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <MainMenu/>
+    },
+    {
+        path: "/profile",
+        element: <Profile/>
     },
     {
         path: "/natal-form",

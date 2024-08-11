@@ -1,6 +1,6 @@
 :root {
     --background-color: #121212;
-    --background-color-second: #181818;
+    --background-color-second: #000000;
     --text-color-title: #ffffff;
     --text-color-block: #f1e3e3;
     --border-color: #ffffff;
@@ -9,7 +9,7 @@
 
 [theme="light"] {
     --background-color: #ffffff;
-    --background-color-second: #f7f9f9;
+    --background-color-second: #dde3e2;
     --text-color-title: #000000;
     --text-color-block: #121212;
     --border-color: #000000;
@@ -27,7 +27,7 @@ body {
     transition: all 0.2s ease-in-out;
 
     font-family: "Comic Sans MS", sans-serif;
-    height: 100%    ;
+    height: 100%;
     background-color: var(--background-color);
     color: var(--text-color-title);
 }

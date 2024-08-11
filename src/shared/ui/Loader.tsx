@@ -7,7 +7,7 @@ const contentStyle: React.CSSProperties = {
     borderRadius: 4,
 };
 
-const content = <div style={contentStyle} />;
+const content = <div style={contentStyle}/>;
 
 
 const Loader = () => {

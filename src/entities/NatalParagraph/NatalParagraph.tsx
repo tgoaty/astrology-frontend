@@ -6,7 +6,7 @@ interface NatalParagraphProps {
     array: [string, string];
 }
 
-const NatalParagraph: React.FC<NatalParagraphProps> = ({ array }) => {
+const NatalParagraph: React.FC<NatalParagraphProps> = ({array}) => {
     const sign = array[0].split(' ')[0]
 
 
