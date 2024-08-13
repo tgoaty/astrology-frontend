@@ -13,6 +13,20 @@ export interface natalInfo {
     time: string
 }
 
+export interface compatibilityFormInterface {
+    fDate: Dayjs,
+    mDate: Dayjs
+}
+
+export interface compatibilityReqData {
+    f_day: string;
+    f_month: string;
+    f_year: string;
+    m_day: string;
+    m_month: string;
+    m_year: string;
+}
+
 export enum themeMode {
     dark = "dark",
     light = "light"

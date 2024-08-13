@@ -6,6 +6,7 @@ interface EndpointsInterface {
 
 const endpoints: EndpointsInterface = {
     getNatal: `${BASE_URL}/natal/description`,
+    getCompatibility: `${BASE_URL}/compatibility`
 }
 
 export default endpoints;

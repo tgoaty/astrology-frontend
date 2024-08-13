@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {Row, Spin} from "antd";
 
 const contentStyle: React.CSSProperties = {
@@ -9,10 +9,13 @@ const contentStyle: React.CSSProperties = {
 
 const content = <div style={contentStyle}/>;
 
+interface loaderProps {
+    marginTop?: number
+}
 
-const Loader = () => {
+const Loader: FC<loaderProps> = ({marginTop}) => {
     return (
-        <Row style={{marginTop: 300}} justify={"center"}>
+        <Row style={marginTop ? {marginTop: marginTop} : {marginTop: 300}} justify={"center"}>
             <Spin tip="Загрузка" size="large">
                 {content}
             </Spin>

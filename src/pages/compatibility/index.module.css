@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 1400px;
+    margin: 100px auto;
+    border: 3px solid var(--border-color);
+    border-radius: 28px;
+}
+
+.table__block {
+    display: flex;
+    column-gap: 100px;
+}
+
+.title {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+.chakra__item {
+    width: 476px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+        width: 360px;
+        margin: 10px auto;
+        border-radius: 18px;
+    }
+    .table__block {
+        display: flex;
+        column-gap: 10px;
+    }
+    .chakra__item {
+        width: 50%;
+    }
+    .form__item {
+        margin: 10px auto;
+    }
+}

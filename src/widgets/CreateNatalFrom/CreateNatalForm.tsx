@@ -17,7 +17,6 @@ const CreateNatalForm = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         form.validateFields().then((value: natalFormInterface) => {
-
             const time = dayjs(value.time).format('HH:mm');
             const dateString = dayjs(value.date).format('DD.MM.YYYY')
             setNatalInfo({city: city, date: dateString, time: time} as natalInfo)

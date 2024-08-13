@@ -9,7 +9,7 @@ const MainMenu = () => {
             <Header/>
             <main className={styles["main"]}>
                 <GoToPageBtn text="Натальная карта" disabled={false} route="/natal-form"/>
-                <GoToPageBtn text="Узнать Совместимость" disabled={true} route="/"/>
+                <GoToPageBtn text="Узнать Совместимость" disabled={false} route="/compatibility"/>
                 <GoToPageBtn text="Гадание на Таро" disabled={true} route="/"/>
             </main>
             <Footer/>

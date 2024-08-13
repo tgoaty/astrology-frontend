@@ -3,3 +3,7 @@ export type NatalChart = {
     "Планеты и Точки в Домах": [string, string][],
     "Аспекты": [string, string][]
 };
+export type CompatibilityInfo = {
+    "title": string,
+    "chakra": [[string, string], [string, string]][]
+}

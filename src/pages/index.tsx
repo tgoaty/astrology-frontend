@@ -7,6 +7,7 @@ const MainMenu = lazy(() => import("./main-menu"))
 const CreateNatalForm = lazy(() => import("./create-natal-form"))
 const NatalChart = lazy(() => import("./natal-chart"))
 const NotFoundPage = lazy(() => import("./not-found"))
+const Compatibility = lazy(() => import("./compatibility"))
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
         path: '/natal',
         element: <NatalChart/>
+    },
+    {
+        path: "/compatibility",
+        element: <Compatibility/>
     },
     {
         path: '*',
