@@ -16,7 +16,7 @@ const Header = () => {
         <header className={styles["header"]}>
             <SideMenu/>
             <div className={styles["user__info"]}>
-                <Button type="text" className={styles["username"]}>{pUsername}</Button>
+                <Button type="text" className={styles["username"]} onClick={openProfile}>{pUsername}</Button>
                 <Avatar className={styles["avatar"]} onClick={openProfile} size={44} icon={<UserOutlined/>}/>
             </div>
         </header>

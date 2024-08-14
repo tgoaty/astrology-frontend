@@ -7,7 +7,6 @@ import styles from "./index.module.css"
 import axios from "axios";
 import endpoints from "../../shared/api/endpoints.ts";
 import {CompatibilityInfo} from "../../shared/types/natalTypes.ts";
-import NatalPageError from "../../shared/ui/Errors/NatalPageError/NatalPageError.tsx";
 import Loader from "../../shared/ui/Loader.tsx";
 import NatalParagraph from "../../entities/NatalParagraph/NatalParagraph.tsx";
 import CompatibilityPageError from "../../shared/ui/Errors/CompatibilityPageError/CompatibilityPageError.tsx";
