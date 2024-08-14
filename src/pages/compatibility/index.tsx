@@ -10,6 +10,7 @@ import {CompatibilityInfo} from "../../shared/types/natalTypes.ts";
 import NatalPageError from "../../shared/ui/Errors/NatalPageError/NatalPageError.tsx";
 import Loader from "../../shared/ui/Loader.tsx";
 import NatalParagraph from "../../entities/NatalParagraph/NatalParagraph.tsx";
+import CompatibilityPageError from "../../shared/ui/Errors/CompatibilityPageError/CompatibilityPageError.tsx";
 
 const Compatibility = () => {
     const [form] = Form.useForm()
@@ -49,7 +50,7 @@ const Compatibility = () => {
     }
 
     if (error) {
-        return <NatalPageError/>
+        return <CompatibilityPageError/>
         //TODO Compatibility Error
     }
 
