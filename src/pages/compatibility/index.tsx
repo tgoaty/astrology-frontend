@@ -1,6 +1,7 @@
 import {Button, DatePicker, Form} from "antd";
 import React, {useState} from "react";
 import dayjs from "dayjs";
+
 import {compatibilityFormInterface, compatibilityReqData} from "../../shared/types/types.ts";
 import styles from "./index.module.css"
 import axios from "axios";
@@ -8,10 +9,11 @@ import endpoints from "../../shared/api/endpoints.ts";
 import {CompatibilityInfo} from "../../shared/types/natalTypes.ts";
 import NatalPageError from "../../shared/ui/Errors/NatalPageError/NatalPageError.tsx";
 import Loader from "../../shared/ui/Loader.tsx";
+import NatalParagraph from "../../entities/NatalParagraph/NatalParagraph.tsx";
 
 const Compatibility = () => {
     const [form] = Form.useForm()
-    const [compatibilityInf, setCompatibilityInf] = useState<CompatibilityInfo | null>()
+    const [compatibilityInf, setCompatibilityInf] = useState<CompatibilityInfo | null>(null)
     const [error, setError] = useState('')
     const [loading, serLoading] = useState<boolean>(false)
 
@@ -45,6 +47,7 @@ const Compatibility = () => {
             .catch(error => setError(error.message || 'Произошла ошибка'))
             .finally(() => serLoading(false))
     }
+
     if (error) {
         return <NatalPageError/>
         //TODO Compatibility Error
@@ -55,13 +58,16 @@ const Compatibility = () => {
         <div className={styles["container"]}>
             <Form layout="inline" onSubmitCapture={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}
                   form={form}>
-                <Form.Item className={styles["form__item"]} label="Женщина" name="fDate" rules={[{required: true, message: ''}]}>
+                <Form.Item className={styles["form__item"]} label="Женщина" name="fDate"
+                           rules={[{required: true, message: ''}]}>
                     <DatePicker size="large" format="DD.MM.YYYY"/>
                 </Form.Item>
-                <Form.Item className={styles["form__item"]} label="Мужчина" name="mDate" rules={[{required: true, message: ''}]}>
+                <Form.Item className={styles["form__item"]} label="Мужчина" name="mDate"
+                           rules={[{required: true, message: ''}]}>
                     <DatePicker size="large" format="DD.MM.YYYY"/>
                 </Form.Item>
-                <Button className={styles["form__item"]} size="large" type="default" htmlType="submit">Рассчитать совместимость</Button>
+                <Button className={styles["form__item"]} size="large" type="default" htmlType="submit">Рассчитать
+                    совместимость</Button>
             </Form>
             {
                 loading && <Loader marginTop={40}/>
@@ -86,6 +92,10 @@ const Compatibility = () => {
                           </div>
 
                       </div>)}
+                <h3 className={styles["title"]}>Комментарии по биоритмам и чакрам</h3>
+                  {compatibilityInf.chakraDescription.map((array, index) => <div key={index}><NatalParagraph
+                      array={array}/>
+                  </div>)}
               </div>
             }
         </div>

@@ -66,5 +66,4 @@ export const useUserInfoStore = create<useUserInfoStoreState & useUserInfoStoreA
             time: newTime,
         })
     }
-
 }))

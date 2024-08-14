@@ -12,7 +12,7 @@ const NatalSection: React.FC<NatalSectionProps> = ({header, arrays}) => {
     return (
         <div className={styles["natal__section__box"]}>
             <h2 className={styles["natal__section__title"]}>{header}</h2>
-            {arrays.map((array, index) => <div key={index}><NatalParagraph array={array}/></div>)}
+            {arrays.map((array, index) => <div key={index}><NatalParagraph array={array} icon={true}/></div>)}
         </div>
     );
 };

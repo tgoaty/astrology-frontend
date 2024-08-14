@@ -5,5 +5,6 @@ export type NatalChart = {
 };
 export type CompatibilityInfo = {
     "title": string,
-    "chakra": [[string, string], [string, string]][]
+    "chakra": [[string, string], [string, string]][],
+    "chakraDescription": [string, string][]
 }
