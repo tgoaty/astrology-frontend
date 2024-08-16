@@ -55,7 +55,7 @@ No special configurations or settings are required before running the project.
 
 ## Author
 
-Project author: Pushkin Nikolay. Contact: [your email or other contact information].
+Project author: Pushkin Nikolay. Contact: adwedelf@gmail.com.
 
 ## License
 
