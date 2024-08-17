@@ -42,9 +42,6 @@ const App = () => {
                 }
 
             }>
-            {/*// TODO Delete this p*/}
-            <p style={{color: "rgba(93,93,93,0.5)", fontSize: 12, left: 0, height: 0}}>Beta version, anything can
-                happen!</p>
             <Routing/>
         </ConfigProvider>
     );
