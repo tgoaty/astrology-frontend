@@ -10,7 +10,7 @@ const MainMenu = () => {
             <main className={styles["main"]}>
                 <GoToPageBtn text="Натальная карта" disabled={false} route="/natal-form"/>
                 <GoToPageBtn text="Узнать Совместимость" disabled={false} route="/compatibility"/>
-                <GoToPageBtn text="In Developed" disabled={true} route="/"/>
+                <GoToPageBtn text="In Developedment" disabled={true} route="/"/>
             </main>
             <Footer/>
         </>
