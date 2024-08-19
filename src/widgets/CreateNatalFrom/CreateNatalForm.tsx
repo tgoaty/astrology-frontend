@@ -38,14 +38,28 @@ const CreateNatalForm = () => {
                            rules={[{required: true, message: ''}]} initialValue={city}>
                     <Input placeholder="Санкт-Петербург"/>
                 </Form.Item>
-                <Form.Item className={styles["form__item"]} name="date" label="Дата Рождения"
-                           rules={[{required: true, message: ''}]} initialValue={dayjs(date, "DD.MM.YYYY")}>
-                    <DatePicker style={{width: '100%'}} format="DD.MM.YYYY"/>
+                <Form.Item
+                    className={styles["form__item"]}
+                    name="date"
+                    label="Дата Рождения"
+                    rules={[{required: true, message: 'Пожалуйста, введите дату рождения!'}]}
+                    initialValue={date !== '' ? dayjs(date, "DD.MM.YYYY") : null}
+                >
+                    <DatePicker
+                        style={{width: '100%'}}
+                        format="DD.MM.YYYY"
+                    />
                 </Form.Item>
-                <Form.Item className={styles["form__item"]} name="time" label="Время Рождения"
-                           initialValue={dayjs(time, format)}>
+
+                <Form.Item
+                    className={styles["form__item"]}
+                    name="time"
+                    label="Время Рождения"
+                    initialValue={time === '' ? dayjs('12:00', format) : dayjs(time, format)}
+                >
                     <TimePicker style={{width: '100%'}} format={format} needConfirm={false}/>
                 </Form.Item>
+
                 <Row justify="end" className={styles["button__row"]}>
                     <Button type="dashed" onClick={() => form.setFieldsValue({
                         name: "",
