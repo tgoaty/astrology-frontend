@@ -40,7 +40,7 @@ const Compatibility = () => {
         serLoading(true)
         axios.post(endpoints.getCompatibility, data)
             .then(response => {
-                const compatibilityData = JSON.parse(response.data);
+                const compatibilityData = response.data;
                 setCompatibilityInf(compatibilityData);
                 sessionStorage.setItem("compatibilityData", JSON.stringify(compatibilityData));
             })
@@ -94,7 +94,7 @@ const Compatibility = () => {
                       </div>)}
                 <h3 className={styles["title"]}>Комментарии по биоритмам и чакрам</h3>
                   {compatibilityInf.chakraDescription.map((array, index) => <div key={index}><NatalParagraph
-                      array={array}/>
+                      object={array}/>
                   </div>)}
               </div>
             }

@@ -10,9 +10,9 @@ const App = () => {
     useEffect(() => {
         document.querySelector('body')?.setAttribute('theme', themeColor)
     }, [themeColor]);
-    //TODO delete this return
-    return <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: 275, fontSize: 24}}>
-        <h1>Site is closed</h1></div>
+    // //TODO delete this return
+    // return <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: 275, fontSize: 24}}>
+    //     <h1>Site is closed</h1></div>
     return (
         <ConfigProvider
             theme={themeColor === themeMode.light

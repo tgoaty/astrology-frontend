@@ -36,13 +36,14 @@ const Index = () => {
 
         axios.post(endpoints.getNatal, data)
             .then(response => {
-                const natalData = JSON.parse(response.data);
+                const natalData = response.data;
                 setNatal(natalData);
+                console.log(natalData)
                 sessionStorage.setItem("natal", JSON.stringify(natalData));
             })
             .catch(error => setError(error.message || 'Произошла ошибка'));
     };
-    if (error) {
+    if (error){
         return <NatalPageError/>
 
     }
@@ -54,7 +55,6 @@ const Index = () => {
         <>
             <NatalSection header={"Планеты и точки в Знаках"} arrays={natal["Планеты и точки в Знаках"]}/>
             <NatalSection header={"Планеты и Точки в Домах"} arrays={natal["Планеты и Точки в Домах"]}/>
-            <NatalSection header={"Аспекты"} arrays={natal["Аспекты"]}/>
         </>
     );
 };
