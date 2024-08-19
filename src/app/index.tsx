@@ -4,6 +4,8 @@ import {themeMode} from "../shared/types/types.ts";
 import {useUserInfoStore} from "./store/store.ts";
 import {useEffect} from "react";
 
+import { Analytics } from "@vercel/analytics/react"
+
 
 const App = () => {
     const {themeColor} = useUserInfoStore()
@@ -45,6 +47,7 @@ const App = () => {
                 }
 
             }>
+            <Analytics/>
             <Routing/>
         </ConfigProvider>
     );
