@@ -7,6 +7,7 @@ const ChangeThemeBtn = () => {
     const {themeColor, setThemeColor} = useUserInfoStore()
 
     const toggleCurrentTheme = () => {
+        document.querySelector('body')
         const newThemeColor = themeColor === themeMode.dark ? themeMode.light : themeMode.dark;
         setThemeColor(newThemeColor);
         localStorage.setItem("theme", newThemeColor);

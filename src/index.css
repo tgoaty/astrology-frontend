@@ -1,4 +1,4 @@
-:root {
+[theme="dark"] {
     --background-color: #121212;
     --background-color-second: #000000;
     --text-color-title: #ffffff;
@@ -25,7 +25,6 @@
 
 body {
     transition: all 0.2s ease-in-out;
-
     font-family: "Comic Sans MS", sans-serif;
     height: 100%;
     background-color: var(--background-color);
