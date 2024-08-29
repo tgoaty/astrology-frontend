@@ -43,10 +43,6 @@ To run the project locally:
 - **Compatibility**: Calculate compatibility by providing data for two individuals.
 - **Theme Customization**: Ability to change the color scheme of the website.
 
-## Configuration
-
-No special configurations or settings are required before running the project.
-
 ## Usage
 
 1. Navigate to the natal chart or compatibility page.
