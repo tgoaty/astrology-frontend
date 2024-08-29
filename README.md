@@ -17,7 +17,7 @@ The project is built with the following technologies:
 
 ## Installation and Setup
 
-To run the project locally, follow these steps:
+To run the project locally:
 
 1. Clone the repository:
     ```bash
