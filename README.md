@@ -17,7 +17,7 @@ The project is built with the following technologies:
 
 ## Installation and Setup
 
-To run the project locally, follow these steps:
+To run the project locally:
 
 1. Clone the repository:
     ```bash
@@ -42,10 +42,6 @@ To run the project locally, follow these steps:
 - **Natal Charts**: Navigate to the page to generate a natal chart by entering the required information.
 - **Compatibility**: Calculate compatibility by providing data for two individuals.
 - **Theme Customization**: Ability to change the color scheme of the website.
-
-## Configuration
-
-No special configurations or settings are required before running the project.
 
 ## Usage
 
