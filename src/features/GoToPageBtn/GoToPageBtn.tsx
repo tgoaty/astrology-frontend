@@ -1,5 +1,5 @@
 import {Button} from "antd";
-import React from "react";
+import {FC} from "react";
 import {useNavigate} from "react-router-dom";
 import styles from "./GoToPageBtn.module.css"
 
@@ -9,7 +9,7 @@ interface goToPageBtnProps {
     disabled: boolean
 }
 
-const GoToPageBtn: React.FC<goToPageBtnProps> = ({text, route, disabled}) => {
+const GoToPageBtn: FC<goToPageBtnProps> = ({text, route, disabled}) => {
     const navigate = useNavigate();
     const goToPage = () => {
         return navigate(route);

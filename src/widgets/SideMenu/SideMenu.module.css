@@ -1,6 +1,7 @@
 .menu__icon {
     font-size: 26px;
     transition: scale 0.1s ease-in-out;
+    display: flex;
 
     &:hover {
         scale: 1.05;
@@ -11,3 +12,4 @@
         scale: 0.98;
     }
 }
+
